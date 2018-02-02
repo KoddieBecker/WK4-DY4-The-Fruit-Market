@@ -1,0 +1,46 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+
+    <HBox>
+        <Text fx:id="boxTimer" GridPane.rowIndex="0"/>
+    </HBox>
+
+    <HBox spacing="490" GridPane.rowIndex="1">
+        <Label fx:id="theFruitMarket" text="The Fruit Market"></Label>
+    </HBox>
+
+    <HBox spacing="50" GridPane.rowIndex="2">
+        <Text fx:id="boxApples" text="Apples"/>
+        <Text fx:id="boxOranges" text="Oranges"/>
+        <Text fx:id="boxBananas" text="Bananas"/>
+        <Text fx:id="boxGrapes" text="Grapes"/>
+    </HBox>
+
+
+    <HBox spacing="20" GridPane.rowIndex="3">
+        <Button onAction="#buyApples" fx:id="btnBuyApples" text="Buy Apples"/>
+        <Button onAction="#buyOranges" fx:id="btnBuyOranges" text="Buy Oranges"/>
+        <Button onAction="#buyBananas" fx:id="btnBuyBananas" text="Buy Bananas"/>
+        <Button onAction="#buyGrapes" fx:id="btnBuyGrapes" text="Buy Grapes"/>
+    </HBox>
+
+    <HBox spacing="20" GridPane.rowIndex="4">
+        <Button onAction="#sellApples" fx:id="btnSellApples" text="Sell Apples"/>
+        <Button onAction="#sellOranges" fx:id="btnSellOranges" text="Sell Oranges"/>
+        <Button onAction="#sellBananas" fx:id="btnSellBananas" text="Sell Bananas"/>
+        <Button onAction="#sellGrapes" fx:id="btnSellGrapes" text="Sell Grapes"/>
+    </HBox>
+
+    <HBox>
+        <Text fx:id="outPutText" GridPane.rowIndex="0"/>
+    </HBox>
+
+
+</GridPane>
